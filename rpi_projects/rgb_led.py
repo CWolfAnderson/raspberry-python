@@ -17,9 +17,9 @@ print("Enter color in format ### with 1's and/or 0's referring Red, Green, and B
 print("Enter anything else to quit.")
 
 try:
-	while(not finished):
+	while not finished:
 		input = raw_input("RGB: ")
-		if (len(input) == 3):
+		if len(input) == 3:
 			GPIO.output(16,int(input[0]))
 			GPIO.output(20,int(input[1]))
 			GPIO.output(21,int(input[2]))
