@@ -8,7 +8,7 @@ GPIO.setup(19, GPIO.OUT)
 GPIO.setup(26, GPIO.OUT)
 interval = 0.05
 while 1:
-        print "Let's do it!"
+        print("Let's do it!")
         GPIO.output(6, GPIO.HIGH)
         time.sleep(interval)
         GPIO.output(13, GPIO.HIGH)

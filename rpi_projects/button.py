@@ -11,12 +11,12 @@ print("----------------")
 print("  Button + GPIO")
 print("----------------")
 
-print GPIO.input(19)
+print(GPIO.input(19))
 while True:
         if (GPIO.input(19) == False):
                 print ("Button Pressed")
                 os.system('date')
-                print GPIO.input(19)
+                print(GPIO.input(19))
                 time.sleep(3)
         else:
                 os.system("clear")

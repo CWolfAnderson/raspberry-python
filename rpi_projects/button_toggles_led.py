@@ -16,12 +16,12 @@ print("----------------")
 
 isOn = False
 
-print GPIO.input(19)
+print(GPIO.input(19))
 while True:
         if (GPIO.input(19) == False):
                 print ("Button Pressed")
                 os.system('date')
-                print GPIO.input(19)
+                print(GPIO.input(19))
                 if (isOn):
                         GPIO.output(12, GPIO.LOW)
                 else:
