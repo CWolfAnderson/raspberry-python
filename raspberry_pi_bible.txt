@@ -1,0 +1,39 @@
+------------------------------------------------------------------------------------------------------------------------
+VNC
+------------------------------------------------------------------------------------------------------------------------
+
+Install with:
+	$ sudo apt-get install tightvncserver
+
+Run with:
+	$ vncserver :1
+    No, you do not want a view-only password
+
+Open with:
+    1. Press CMD + K in Finder
+    2. Enter vnc://192.168.2.2:5901 as Server Address
+
+------------------------------------------------------------------------------------------------------------------------
+Troubleshooting
+------------------------------------------------------------------------------------------------------------------------
+
+Before Anything:
+	* Make sure Internet Sharing is on & sharing from Wi-Fi to Ethernet
+
+Basic Debugging:
+	* Turn Internet Sharing off & back on again
+	* Make sure cables are connected properly
+
+
+Permission denied (publickey,keyboard-interactive).
+    * Turn Internet Sharing off & back on again
+
+ssh: connect to host 192.168.2.2 port 22: Connection refused
+ssh: connect to host 192.168.2.2 port 22: Operation timed out
+	* Check your cable connection
+
+
+Fix for some things:
+	cd .ssh
+	rm -R known_hosts
+	cd ..
